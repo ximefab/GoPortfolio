@@ -1,7 +1,7 @@
 package routes
 
 import (
-	_"../controllers"
+	"github.com/ximefab/GoPortfolio/controllers"
 
 	"github.com/gofiber/fiber/v2"
 	)
