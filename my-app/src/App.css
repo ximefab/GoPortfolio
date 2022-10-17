@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+ 
 }
 
 .App-logo {
@@ -38,9 +39,17 @@
 }
 
 .SignInDiv {
-  width: 25%;
-  height: fit-content;
+  width: 30%;
+  height: 650px !important;
   float: left;
+  border: 2px solid blue;
+  padding: 5%;
+  margin-left: 35%;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+
+
 }
 
 
