@@ -1,8 +1,8 @@
 package main
 
 import (
-    _"./database"
-    _"./routes"
+    "github.com/ximefab/GoPortfolio/database"
+    "github.com/ximefab/GoPortfolio/routes"
     "github.com/gofiber/fiber/v2"
 )
 
