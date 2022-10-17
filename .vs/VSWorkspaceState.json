@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\controllers",
+    "\\database",
+    "\\routes"
+  ],
+  "SelectedNode": "\\database\\connection.go",
+  "PreviewInSolutionExplorer": false
+}
