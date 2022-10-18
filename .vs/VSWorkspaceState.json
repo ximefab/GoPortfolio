@@ -3,10 +3,8 @@
     "",
     "\\controllers",
     "\\database",
-    "\\my-app",
-    "\\my-app\\src",
     "\\routes"
   ],
-  "SelectedNode": "\\my-app\\src\\App.tsx",
+  "SelectedNode": "\\routes",
   "PreviewInSolutionExplorer": false
 }

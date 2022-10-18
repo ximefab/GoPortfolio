@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: beige !important;
  
 }
 
@@ -42,7 +43,6 @@
   width: 30%;
   height: 650px !important;
   float: left;
-  border: 2px solid blue;
   padding: 5%;
   margin-left: 35%;
   background-color: black;
@@ -52,4 +52,65 @@
 
 }
 
+.Nav2 {
 
+  color: white;
+  background-color: black;
+
+}
+
+.textColor {
+
+  color: white !important;
+
+}
+
+.RegisterDiv {
+  width: 30%;
+  height: 650px !important;
+  float: left;
+
+  padding: 5%;
+  margin-left: 35%;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+
+
+}
+
+.FullHome{
+  width: 100%;
+  height: 800px !important;
+ 
+  margin-top: 0px!important;
+}
+
+.Homeright{
+  Float: right;
+  height: 100%;
+  width: 50%;
+ 
+
+}
+
+.Homeleft{
+  Float: Left;
+  height: 100%;
+  width: 50%;
+ 
+
+}
+
+.ImageHome{
+  background-image: url(./Images/HomePageImg.jpg) !important;
+  width: 80%;
+  Height: 100%;
+  margin-left: 15%;
+
+  background-size: contain;
+    background-position-y: 60%;
+
+    background-repeat: no-repeat;
+
+}
