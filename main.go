@@ -1,20 +1,49 @@
 package main
 
-import "github.com/gofiber/fiber/v2"
+import (
+	"context"
+	"fmt"
+	"log"
+	"time"
+
+	"go.mongodb.org/mongo-driver/bson"
+	"go.mongodb.org/mongo-driver/mongo"
+	"go.mongodb.org/mongo-driver/mongo/options"
+	"go.mongodb.org/mongo-driver/mongo/readpref"
+)
 
 func main() {
-    app := fiber.New()
 
-    app.Get("/", func(c *fiber.Ctx) error {
-        return c.SendString("Hello, World 👋!")
-    })
+	//connecting the database
+	client, err := mongo.NewClient(options.Client().ApplyURI("mongodb+srv://root:rootroot@cluster0.b9lboem.mongodb.net/401db?retryWrites=true&w=majority"))
 
-    app.Listen(":3000")
-}
+	//handling errors
+	if err != nil {
+		log.Fatal(err)
+	}
+	//after 10 seconds the session will be closed
+	ctx, _ := context.WithTimeout(context.Background(), 10*time.Second)
+	//establishing connection error
+	err = client.Connect(ctx)
+	if err != nil {
+		log.Fatal(err)
+	}
+	//disconnection
+	defer client.Disconnect(ctx)
 
+	//ping / errors
+	err = client.Ping(ctx, readpref.Primary())
+	if err != nil {
+		log.Fatal(err)
+	}
 
-//Ximena Test
-//LFDJKNFDI
+	//lists databases as a string
+	databases, err := client.ListDatabaseNames(ctx, bson.M{})
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println(databases)
 
-//Ximena
-//Ximena
+} //end main func
+
+//Maikayla!

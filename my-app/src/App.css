@@ -1,0 +1,116 @@
+.App {
+  text-align: center;
+  background-color: beige !important;
+ 
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.SignInDiv {
+  width: 30%;
+  height: 650px !important;
+  float: left;
+  padding: 5%;
+  margin-left: 35%;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+
+
+}
+
+.Nav2 {
+
+  color: white;
+  background-color: black;
+
+}
+
+.textColor {
+
+  color: white !important;
+
+}
+
+.RegisterDiv {
+  width: 30%;
+  height: 650px !important;
+  float: left;
+
+  padding: 5%;
+  margin-left: 35%;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+
+
+}
+
+.FullHome{
+  width: 100%;
+  height: 800px !important;
+ 
+  margin-top: 0px!important;
+}
+
+.Homeright{
+  Float: right;
+  height: 100%;
+  width: 50%;
+ 
+
+}
+
+.Homeleft{
+  Float: Left;
+  height: 100%;
+  width: 50%;
+ 
+
+}
+
+.ImageHome{
+  background-image: url(./Images/HomePageImg.jpg) !important;
+  width: 80%;
+  Height: 100%;
+  margin-left: 15%;
+
+  background-size: contain;
+    background-position-y: 60%;
+
+    background-repeat: no-repeat;
+
+}
