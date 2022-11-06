@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: beige !important;
+
  
 }
 
@@ -90,3 +90,7 @@
 }
 
 .navbar {margin-bottom: 0;}
+
+.dropdown{
+  color: white;
+}

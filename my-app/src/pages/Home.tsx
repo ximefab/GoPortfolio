@@ -9,7 +9,7 @@ const Home = () => {
 
     let navigate = useNavigate(); 
     const routeChange = () =>{ 
-      let path = `Login`; 
+      let path = `Contact`; 
       navigate(path);
     }
 

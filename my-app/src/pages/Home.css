@@ -10,7 +10,7 @@
     Float: right;
     height: 100%;
     width: 50%;
-    Border: 2px solid blue;
+    
    
   
   }
@@ -28,7 +28,6 @@
     width: 80%;
     Height: 100%;
     margin-left: 5%;
-    border: 2px solid red; 
   
     background-size: contain;
     background-position-y: 60%;
@@ -37,7 +36,6 @@
   }
 
   .HomeBottomText{
-    border: 2px solid plum;
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
@@ -49,15 +47,14 @@
   .ContactButton{
     Width: 125px;
     height: 60px;
-    background-color: pink;
+    background-color: black;
     border-radius: 15px;
     font-size: large;
     color: white;
-    border: pink;
+    border: black;
   }
 
   .ContainerStuff{
-    border: 2px solid BLUE;
     margin-left: 10%;
     margin-right: 10%;
     height: 100px;
