@@ -41,7 +41,7 @@
 
 .SignInDiv {
   width: 30%;
-  height: 650px !important;
+  height: 85vh !important;
   float: left;
   padding: 5%;
   margin-left: 35%;
@@ -67,7 +67,7 @@
 
 .RegisterDiv {
   width: 30%;
-  height: 650px !important;
+  height: 85vh !important;
   float: left;
 
   padding: 5%;
@@ -83,6 +83,7 @@
 
 .HeaderFont{
   font-family: 'Raleway', sans-serif;
+ 
 }
 
 .TextFont{

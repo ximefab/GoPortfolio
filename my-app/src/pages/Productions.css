@@ -1,6 +1,61 @@
 .ProdBody{
-    Height: 100% !important;
+    Height: 200vh !important;
     Width: 100%;
     border: 2px solid pink;
     
+}
+
+.Part1Left{
+    height: 100%;
+    width: 50%;
+    float: left; 
+    border: 2px solid blue;
+}
+
+.Part1Right{
+    height: 100%;
+    width: 50%;
+    float: left; 
+    border: 2px solid blueviolet;
+}
+
+.Part1{
+    height: 30%;
+    width: 100%;
+    border: 2px solid rgb(232, 186, 20);
+}
+
+.Img1{
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+    background-image: url(../Images/dancesummer.png) !important;
+    background-size: contain;
+    background-position-y: 60%;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+.Img2{
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+    background-image: url(../Images/dance22.png) !important;
+    background-size: contain;
+    background-position-y: 60%;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    border: 2px solid blue;
+}
+
+
+.Img3{
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+    background-image: url(../Images/soap.PNG) !important;
+    background-size: contain;
+    background-position-y: 60%;
+    background-repeat: no-repeat;
+    border-radius: 20px;
 }
