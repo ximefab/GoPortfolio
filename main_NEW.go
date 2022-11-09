@@ -1,7 +1,7 @@
 package main
 
 import (
-	"fibr/fiber-mongo-api/configs"
+	"github.com/ximefab/GoPortfolio/fiber-mongo-api/configs"
 
 	"github.com/gofiber/fiber/v2"
 )
