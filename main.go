@@ -12,9 +12,9 @@ func main() {
   
     //run database
     configs.ConnectDB()
-    
+
 	//routes
-    routes.UserRoute(app) //add this
+    routes.UserRoute(app)
   
-    app.Listen(":6000")
+    app.Listen(":3000")
 }
