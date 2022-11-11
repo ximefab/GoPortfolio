@@ -10,10 +10,9 @@ import (
 func main() {
     app := fiber.New()
   
-    app.Get("/", func(c *fiber.Ctx) error {
-        return c.JSON(&fiber.Map{"data": "Hello from Fiber & mongoDB"})
-    })
-
+    //run database
+    configs.ConnectDB()
+    
 	//routes
     routes.UserRoute(app) //add this
   
