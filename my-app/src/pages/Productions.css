@@ -1,0 +1,34 @@
+.ProdBody{
+    Height: 200vh !important;
+    Width: 100%;
+    border: 2px solid pink;
+    
+}
+
+.Part1Left{
+    height: 100%;
+    width: 50%;
+    float: left; 
+    border: 2px solid blue;
+    
+}
+
+.Part1Right{
+    height: 100%;
+    width: 50%;
+    float: left; 
+    border: 2px solid blueviolet;
+}
+
+.Part1{
+    height: 30%;
+    width: 100%;
+    border: 2px solid rgb(232, 186, 20);
+}
+
+.textParts{
+    height: 80%;
+    width: 80%;
+    margin: 10%; 
+    border: 2px solid rgb(48, 189, 59); 
+}

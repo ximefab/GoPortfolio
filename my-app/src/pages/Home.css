@@ -1,0 +1,64 @@
+.FullHome{
+    width: 100%;
+    height:95vh;
+
+   
+    margin-top: 0px!important;
+  }
+  
+  .Homeright{
+    Float: right;
+    height: 100%;
+    width: 50%;
+    
+   
+  
+  }
+  
+  .Homeleft{
+    Float: Left;
+    height: 100%;
+    width: 40%;
+    margin-left:10%;
+   
+  
+  }
+  
+  .ImageHome{
+    background-image: url(../Images/HomePageImg.jpg) !important;
+    width: 80%;
+    Height: 100%;
+    margin-left: 5%;
+  
+    background-size: contain;
+    background-position-y: 60%;
+    background-repeat: no-repeat;
+  
+  }
+
+  .HomeBottomText{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 40%;
+    
+
+  }
+
+  .ContactButton{
+    Width: 125px;
+    height: 60px;
+    background-color: black;
+    border-radius: 15px;
+    font-size: large;
+    color: white;
+    border: black;
+  }
+
+  .ContainerStuff{
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 100px;
+    margin-top: 10%;
+
+  }

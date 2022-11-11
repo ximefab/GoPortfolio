@@ -1,0 +1,13 @@
+.CarouColor{
+    border: 2px solid blue;
+    height: 600px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.FirstIMG{
+    background-image: url(../Images/HomePageImg.jpg) !important;
+    height: 100%;
+    width: 100%;
+}
