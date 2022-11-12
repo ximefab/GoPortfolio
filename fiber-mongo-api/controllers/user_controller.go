@@ -3,14 +3,15 @@ package controllers
 import (
 	"context"
 	"fmt"
+	"log"
 	"net/http"
 	"time"
 
+	"github.com/fiber-mongo-api/configs"
+	"github.com/fiber-mongo-api/models"
+	"github.com/fiber-mongo-api/responses"
 	"github.com/go-playground/validator/v10"
 	"github.com/gofiber/fiber/v2"
-	"github.com/ximefab/GoPortfolio/fiber-mongo-api/configs"
-	"github.com/ximefab/GoPortfolio/fiber-mongo-api/models"
-	"github.com/ximefab/GoPortfolio/fiber-mongo-api/responses"
 
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
@@ -38,6 +39,7 @@ func CreateUser(c *fiber.Ctx) error {
 	newUser := models.User{
 		Id:       primitive.NewObjectID(),
 		Name:     user.Name,
+		Password: user.Password,
 		Location: user.Location,
 		Title:    user.Title,
 	}
@@ -58,7 +60,7 @@ func GetAUser(c *fiber.Ctx) error {
 
 	objId, _ := primitive.ObjectIDFromHex(userId)
 
-	err := userCollection.FindOne(ctx, bson.M{"id": objId}).Decode(&user)
+	err := userCollection.FindOne(ctx, bson.M{"_id": objId}).Decode(&user)
 	if err != nil {
 		return c.Status(http.StatusInternalServerError).JSON(responses.UserResponse{Status: http.StatusInternalServerError, Message: "error", Data: &fiber.Map{"data": err.Error()}})
 	}
@@ -130,13 +132,14 @@ func GetAllUsers(c *fiber.Ctx) error {
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	var users []models.User
 	defer cancel()
-	fmt.Println("Getting all users")
 
 	results, err := userCollection.Find(ctx, bson.M{})
-	fmt.Println("Result is")
-	fmt.Println(results)
 	if err != nil {
 		return c.Status(http.StatusInternalServerError).JSON(responses.UserResponse{Status: http.StatusInternalServerError, Message: "error", Data: &fiber.Map{"data": err.Error()}})
+	}
+
+	if err = results.All(ctx, &users); err != nil {
+		log.Fatal(err)
 	}
 
 	//reading from the db in an optimal way
@@ -151,4 +154,20 @@ func GetAllUsers(c *fiber.Ctx) error {
 	}
 
 	return c.JSON(users)
+}
+
+func ValidateUser(c *fiber.Ctx) error {
+	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+	name := c.Query("name")
+	password := c.Query("password")
+
+	var user models.User
+	defer cancel()
+
+	err := userCollection.FindOne(ctx, bson.M{"name": name, "password": password}).Decode(&user)
+	if err != nil {
+		return c.Status(http.StatusForbidden).JSON(responses.UserResponse{Status: http.StatusForbidden, Message: "Name and/or Password is invalid", Data: &fiber.Map{"data": err.Error()}})
+	}
+
+	return c.Status(http.StatusOK).JSON(responses.UserResponse{Status: http.StatusOK, Message: "Authenticated"})
 }
