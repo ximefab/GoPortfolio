@@ -18,6 +18,12 @@ const Nav = () => {
                             <Link to="/login" className="nav-link active" >Login</Link>
                         </li>
                         <li className="nav-item">
+                            <Link to="/about" className="nav-link active" >About</Link>
+                        </li>
+
+                        
+                        
+                        <li className="nav-item">
                             <Link to="/register" className="nav-link" >Register</Link>
                         </li>
 

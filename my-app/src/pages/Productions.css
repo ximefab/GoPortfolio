@@ -1,15 +1,21 @@
 .ProdBody{
     Height: 200vh !important;
     Width: 100%;
-    border: 2px solid pink;
     
+}
+
+.Heading{
+    width: 80%;
+    height: 10%;
+    margin-right: 10%;
+    margin-left: 10%;
+
 }
 
 .Part1Left{
     height: 100%;
     width: 50%;
     float: left; 
-    border: 2px solid blue;
     
 }
 
@@ -17,18 +23,17 @@
     height: 100%;
     width: 50%;
     float: left; 
-    border: 2px solid blueviolet;
 }
 
 .Part1{
     height: 30%;
     width: 100%;
-    border: 2px solid rgb(232, 186, 20);
+    border: 2px solid black;
 }
 
 .textParts{
-    height: 80%;
+    height: 70%;
     width: 80%;
     margin: 10%; 
-    border: 2px solid rgb(48, 189, 59); 
+    margin-bottom: 15%;
 }
