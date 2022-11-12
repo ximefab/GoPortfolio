@@ -1,20 +1,21 @@
 package main
 
 import (
+	"github.com/gofiber/fiber/v2"
 	"github.com/ximefab/GoPortfolio/fiber-mongo-api/configs"
 	"github.com/ximefab/GoPortfolio/fiber-mongo-api/routes"
-    "github.com/gofiber/fiber/v2"
-	
 )
 
 func main() {
-    app := fiber.New()
-  
-    //run database
-    configs.ConnectDB()
+	app := fiber.New()
+
+	//run database
+	configs.ConnectDB()
 
 	//routes
-    routes.UserRoute(app)
-  
-    app.Listen(":3000")
+	routes.UserRoute(app)
+
+    
+
+	app.Listen(":3001")
 }
