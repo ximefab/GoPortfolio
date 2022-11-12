@@ -1,0 +1,54 @@
+.FullAd{
+    Height: 200vh;
+    width: 80%;
+    Margin-left: 10%;
+    Margin-right: 10%;
+}
+
+
+
+.Caption{
+    Height: 10%;
+    width: 80%;
+    Margin-left: 10%;
+    Margin-right: 10%;
+}
+
+.Example1{
+    Height: 45%;
+    Width: 100%;
+    float: right;
+}
+.P1{
+    Width: 50%;
+    height: 100%;
+    Float: left;
+}
+
+.P2{
+    Width: 50%;
+    height: 100%;
+    Float: right;
+    background-image: url(../Images/brand-board.png) !important;
+    background-size: contain;
+    background-position-y: 60%;
+    background-repeat: no-repeat;
+    border: 1px solid rgb(0, 0, 0);
+    border-right: none;
+
+}
+
+.Example2{
+    Height: 45%;
+    Width: 100%;
+    float: right;
+    background-image: url(../Images/Mock-Up_FrisbyAnn.png) !important;
+    background-size: contain;
+    background-position-y: 60%;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+
+
+}
+
+
