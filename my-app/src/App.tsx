@@ -13,6 +13,12 @@ import GraphicDesign from './pages/GraphicDesign';
 import DigitalAd from './pages/DigitalAd';
 import About from './pages/About';
 
+export const routes = {
+  root: `/`,
+  notfound: `*`,
+  home: `/home`,
+  div: `/div`,
+};
 function App() {
   return (
     <div className="App">
@@ -22,7 +28,7 @@ function App() {
         <main className="form-signin">
           <Routes>
 
-            <Route path="/" element={<Home />} />
+            <Route path= "/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="contact" element={<Contact />} />
