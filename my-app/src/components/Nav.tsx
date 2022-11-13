@@ -12,14 +12,27 @@ const Nav = () => {
                 <div >
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <Link to="/works" className="nav-link active" >Works</Link>
+                            <Link to="/about" className="nav-link active" >About</Link>
                         </li>
+                        
+                        <li className="nav-item">
+                            <Link to="/graphicdesign" className="nav-link active" >Graphic Design</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/productions" className="nav-link active" >Productions</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/digitalad" className="nav-link active" >Advertising</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/photography" className="nav-link active" >Photography</Link>
+                        </li>
+
+
                         <li className="nav-item">
                             <Link to="/login" className="nav-link active" >Login</Link>
                         </li>
-                        <li className="nav-item">
-                            <Link to="/about" className="nav-link active" >About</Link>
-                        </li>
+
 
 
                     </ul>

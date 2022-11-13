@@ -12,7 +12,6 @@ import Productions from './pages/Productions';
 import GraphicDesign from './pages/GraphicDesign';
 import DigitalAd from './pages/DigitalAd';
 import About from './pages/About';
-import Works from './pages/Works';
 
 function App() {
   return (
@@ -27,12 +26,13 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="contact" element={<Contact />} />
-            <Route path="/works/photography" element={<Photography />} />
-            <Route path="/works/Productions" element={<Productions />} />
-            <Route path="/works/graphicdesign" element={<GraphicDesign />} />
-            <Route path="/works/digitalad" element={<DigitalAd />} />
             <Route path="/about" element={<About />} />
-            <Route path="/works" element={<Works />} />
+           
+
+            <Route path="/photography" element={<Photography />} />
+            <Route path="/Productions" element={<Productions />} />
+            <Route path="/graphicdesign" element={<GraphicDesign />} />
+            <Route path="/digitalad" element={<DigitalAd />} />
           </Routes>
         
 
