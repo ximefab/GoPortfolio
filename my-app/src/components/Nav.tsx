@@ -16,6 +16,9 @@ const Nav = () => {
                         </li>
                         
                         <li className="nav-item">
+                            <Link to="/photography" className="nav-link active" >Photography</Link>
+                        </li>                        
+                        <li className="nav-item">
                             <Link to="/graphicdesign" className="nav-link active" >Graphic Design</Link>
                         </li>
                         <li className="nav-item">
@@ -24,9 +27,7 @@ const Nav = () => {
                         <li className="nav-item">
                             <Link to="/digitalad" className="nav-link active" >Advertising</Link>
                         </li>
-                        <li className="nav-item">
-                            <Link to="/photography" className="nav-link active" >Photography</Link>
-                        </li>
+
 
 
                         <li className="nav-item">

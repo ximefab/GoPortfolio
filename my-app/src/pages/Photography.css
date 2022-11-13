@@ -1,13 +1,25 @@
-.CarouColor{
-    border: 2px solid blue;
-    height: 600px;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+.all1{
+    
+    margin: -25px;
+    height: 100vh;
+    width: 100%;
+
+
 }
 
-.FirstIMG{
-    background-image: url(../Images/HomePageImg.jpg) !important;
-    height: 100%;
-    width: 100%;
+
+.CarouColor{
+    height: 50%;
+    width: 50%;
+    float:left;
+    margin-top: 100px;
+}
+
+
+.cartxt{
+    width: 50%;
+    height: 50vh;
+    float: right;
+    margin-top: 100px;
+
 }

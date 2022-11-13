@@ -8,7 +8,7 @@ const DigitalAd = () => {
             <div className='Caption'>
                 <br></br>
                 <br></br>
-                <h1 className='HeaderFont'>Digital Advertising!</h1>
+                <h1 className='HeaderFont'>Digital Advertising</h1>
                 
             </div>
 
