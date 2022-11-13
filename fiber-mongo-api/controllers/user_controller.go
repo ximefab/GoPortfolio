@@ -166,8 +166,12 @@ func ValidateUser(c *fiber.Ctx) error {
 
 	err := userCollection.FindOne(ctx, bson.M{"name": name, "password": password}).Decode(&user)
 	if err != nil {
-		return c.Status(http.StatusForbidden).JSON(responses.UserResponse{Status: http.StatusForbidden, Message: "Name and/or Password is invalid", Data: &fiber.Map{"data": err.Error()}})
+		c.Status(http.StatusFound).Location("http://localhost:3000/login?message=Login Failed")
+		return nil
 	}
 
-	return c.Status(http.StatusOK).JSON(responses.UserResponse{Status: http.StatusOK, Message: "Authenticated"})
+	c.Status(http.StatusFound).Location("http://localhost:3000")
+
+	return nil
+
 }
