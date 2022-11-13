@@ -8,7 +8,6 @@ import {
 
 
   
-//import Carousel from 'react-bootstrap/Carousel';
 const Photography = () => {
 
     return (
